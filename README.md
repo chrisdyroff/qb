@@ -10,10 +10,11 @@ class Agent(db.Model):
     __Table__ = "Agent"
 ```
 
-After reflecting the database schema, I could start using my class immediately. I was using a "DB first" approach where I didn't mind managing databases directly, without the alembic library. 
+After reflecting the database schema, I could start using my class immediately. I was using a "DB first" approach where I didn't mind managing databases directly, without the alembic library. This is very similar to how I'm working with Quickbase, where I or others might add fields to my app's tables at any time.
 
 ## Goals
 
+- Provide simple interface for any object to interact with QB
 - Eliminate the need to map fields for CRUD operations
 - Easily configurable with yaml
 - Easily installable with pip
